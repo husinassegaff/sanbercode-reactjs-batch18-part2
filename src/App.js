@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Tugas9 from './Tugas-9/tugas9.js'
+import FormBuah from './Tugas-9/FormBuah.js';
+import DaftarBuah from './Tugas-10/DaftarBuah.js';
+import ItemBuah from './Tugas-10/ItemBuah.js'
 
-function App() {
-  return (
-      <div>
-        <Tugas9 />
-      </div>
-    
+
+function App(){
+  return(
+    <div>
+      <FormBuah />
+      <DaftarBuah />
+    </div>
   );
 }
 
