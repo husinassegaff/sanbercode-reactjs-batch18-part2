@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import FormBuah from './Tugas-9/FormBuah.js';
 import DaftarBuah from './Tugas-10/DaftarBuah.js';
-import ItemBuah from './Tugas-10/ItemBuah.js'
+import Timer from './Tugas-11/Timer.js'
+
 
 
 function App(){
@@ -10,6 +11,7 @@ function App(){
     <div>
       <FormBuah />
       <DaftarBuah />
+      <Timer />
     </div>
   );
 }
