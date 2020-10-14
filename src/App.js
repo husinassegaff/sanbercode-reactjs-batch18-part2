@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import FormBuah from './Tugas-9/FormBuah.js'
-import Lists from './Tugas-12/Lists.js'
+import DaftarBuah from './Tugas-12/DaftarBuah.js'
+
 
 
 function App(){
   return(
     <div>
-      <Lists />
+      <DaftarBuah />
     </div>
   );
 }
