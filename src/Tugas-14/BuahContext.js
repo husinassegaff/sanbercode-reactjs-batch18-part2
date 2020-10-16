@@ -1,28 +1,21 @@
-import React, { useState, useEffect, createContext } from "react";
-import axios from "axios"
-import "../Tugas-13/DaftarBuah.css"
+import React, { useState, createContext } from "react";
+
 
 export const BuahContext = createContext();
 
 export const BuahProvider = (props) => {
-    const [daftarBuah, setDaftarBuah] = useState(null)
-    const [input, setInput] = useState({name: "", price: "", weight: 0, id: null})
+  const [daftarBuah, setDaftarBuah] = useState({
+    lists: null,
+    selectedId: 0,
+    statusForm: "create"
+  });
 
-    useEffect( () => {
-        if (daftarBuah === null){
-          axios.get(`http://backendexample.sanbercloud.com/api/fruits`)
-          .then(res => {
-            setDaftarBuah(res.data.map(el=>{ return {id: el.id, name: el.name, price: el.price, weight: el.weight }} ))
-          })
-        }
-    }, [daftarBuah])
-
-    return(
-        <BuahContext.Provider value = {[daftarBuah, setDaftarBuah]}>
-            {props.children}
-        </BuahContext.Provider>
-    )
-}
+  return (
+    <BuahContext.Provider value={[daftarBuah, setDaftarBuah]}>
+      {props.children}
+    </BuahContext.Provider>
+  );
+};
 
 
 export default BuahProvider
