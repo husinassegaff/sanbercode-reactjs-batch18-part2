@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import axios from "axios"
 import "./DaftarBuah.css"
 
-const DaftarBuah = () => {  
+const DaftarBuah13 = () => {  
   const [daftarBuah, setDaftarBuah] =  useState(null)
   const [input, setInput]  =  useState({name: "", price: "", weight: 0, id: null})
 
@@ -164,4 +164,4 @@ const DaftarBuah = () => {
   )
 }
 
-export default DaftarBuah
+export default DaftarBuah13

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ItemBuah from './ItemBuah'
 
 
-class DaftarBuah extends Component {
+class DaftarBuah10 extends Component {
   
   render() {
     let dataHargaBuah = [
@@ -39,4 +39,4 @@ class DaftarBuah extends Component {
   }
 }
 
-export default DaftarBuah
+export default DaftarBuah10

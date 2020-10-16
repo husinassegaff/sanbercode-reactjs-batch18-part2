@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import Buah from './Tugas-14/Buah.js'
+import {BrowserRouter as Router} from "react-router-dom"
+import Routes from "./Tugas-15/Routes"
 
-function App(){
-  return(
+function App() {
+  return (
     <div>
-      <Buah />
+      <Router>
+        <Routes/>
+      </Router>
     </div>
   );
 }

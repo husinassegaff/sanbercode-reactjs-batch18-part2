@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import "./DaftarBuah.css"
 
-class DaftarBuah extends Component{
+class DaftarBuah12 extends Component{
 
   constructor(props){
     super(props)
@@ -173,4 +173,4 @@ class DaftarBuah extends Component{
   }
 }
 
-export default DaftarBuah
+export default DaftarBuah12
